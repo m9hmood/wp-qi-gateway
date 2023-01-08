@@ -40,9 +40,6 @@ Using File Manager:
 
 == Upgrade Notice ==
 
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
 
 == Disclaimer Of Qi Gateway: UnOfficial Advanced Gateway Plugin ==
 This plugin, Qi Gateway: UnOfficial Advanced Gateway, is provided on an "as is" and "as available"
