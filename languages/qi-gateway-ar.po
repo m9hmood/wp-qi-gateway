@@ -1,0 +1,203 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-01-08 11:16+0300\n"
+"PO-Revision-Date: 2023-01-08 11:39+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-qi-gateway-admin.php:25
+msgid "Qi Logs"
+msgstr "سجلات كي"
+
+#: admin/includes/class-qi-gateway-admin-table.php:24
+msgid "success"
+msgstr "نجاح"
+
+#: admin/includes/class-qi-gateway-admin-table.php:24
+msgid "failed"
+msgstr "فشل"
+
+#: admin/includes/class-qi-gateway-admin-table.php:29
+msgid "create order"
+msgstr "انشاء طلب"
+
+#: admin/includes/class-qi-gateway-admin-table.php:29
+msgid "order payment"
+msgstr "دفع الطلب"
+
+#: admin/includes/class-qi-gateway-admin-table.php:37
+msgid "ID"
+msgstr ""
+
+#: admin/includes/class-qi-gateway-admin-table.php:38
+msgid "Order Id"
+msgstr "رقم الطلب"
+
+#: admin/includes/class-qi-gateway-admin-table.php:39
+msgid "Operation"
+msgstr "العملية"
+
+#: admin/includes/class-qi-gateway-admin-table.php:40
+msgid "Status"
+msgstr "الحالة"
+
+#: admin/includes/class-qi-gateway-admin-table.php:41
+msgid "Card Holder"
+msgstr "اسم حامل البطاقة"
+
+#: admin/includes/class-qi-gateway-admin-table.php:42
+msgid "Card Number"
+msgstr "رقم البطاقة"
+
+#: admin/includes/class-qi-gateway-admin-table.php:43
+#: includes/class-qi-gateway-woocommerce.php:105
+msgid "Currency"
+msgstr "العملة"
+
+#: admin/includes/class-qi-gateway-admin-table.php:44
+msgid "Amount"
+msgstr "المبلغ"
+
+#: admin/includes/class-qi-gateway-admin-table.php:45
+msgid "Create Date"
+msgstr "تاريخ الانشاء"
+
+#: admin/partials/bills-statistics.php:52
+msgid "Total Orders"
+msgstr "عدد الفواتير الكلي"
+
+#: admin/partials/bills-statistics.php:92
+msgid "Total Unpaid Orders"
+msgstr "عدد الفواتير الغير مدفوعه"
+
+#: admin/partials/bills-statistics.php:132
+msgid "Total Paid Orders Amount"
+msgstr "المبلغ الكلي للفواتير المدفوعة"
+
+#: includes/class-qi-gateway-callback.php:39
+msgid "sorry, we couldn't find the order"
+msgstr "عذراً, لم نتمكن من إيجاد الطلب"
+
+#: includes/class-qi-gateway-callback.php:70
+msgid "Order Status has been set to paid"
+msgstr "تم دفع الفاتورة بنجاح"
+
+#: includes/class-qi-gateway-callback.php:76
+msgid "Payment Failed"
+msgstr "فشلت عملية الدفع"
+
+#: includes/class-qi-gateway-callback.php:83
+msgid "An error occurred while processing the payment"
+msgstr "حدث خطأ، يرجى التواصل مع ادارة الموقع من اجل التحقق من عملية الدفع"
+
+#: includes/class-qi-gateway-callback.php:101
+msgid "Sorry, we couldn't find the order"
+msgstr "عذراً, لم نتمكن من إيجاد الطلب"
+
+#: includes/class-qi-gateway-woocommerce.php:48
+msgid "Qi Gateway"
+msgstr "خدمة كي كارد"
+
+#: includes/class-qi-gateway-woocommerce.php:49
+msgid "Have your customers pay with Qi-Card or MasterQi."
+msgstr ""
+"اضف إمكانية الدفع لعملائك من خلال بطاقة كي او من خلال بطاقة ماستر العالمية."
+
+#: includes/class-qi-gateway-woocommerce.php:65
+msgid "Qi Gateway was disabled, You must set Secret Key from  settings"
+msgstr "تم إيقاف إضافة خدمات كي, يجب عليك إضافة ال secret key لتفعيل الاضافة"
+
+#: includes/class-qi-gateway-woocommerce.php:83
+msgid "Enable"
+msgstr "تفعيل"
+
+#: includes/class-qi-gateway-woocommerce.php:84
+msgid "Enable Qi Gateway"
+msgstr "تفعيل بوابة الدفع"
+
+#: includes/class-qi-gateway-woocommerce.php:89
+msgid "Title"
+msgstr "العنوان"
+
+#: includes/class-qi-gateway-woocommerce.php:90
+msgid "Payment Option Title"
+msgstr ""
+
+#: includes/class-qi-gateway-woocommerce.php:95
+msgid "Description"
+msgstr "الوصف"
+
+#: includes/class-qi-gateway-woocommerce.php:97
+msgid "This description is what user see when choose qi gateway"
+msgstr "هذا الوصف يظهر للمستخدم عند تحديد خدمة كي كارد لدفع الطلب"
+
+#: includes/class-qi-gateway-woocommerce.php:98
+msgid "Pay via Qi with your QiCard or MasterQi"
+msgstr "ادفع من خلال بطاقة Qi او Master Qi"
+
+#: includes/class-qi-gateway-woocommerce.php:101
+msgid "Secret Key"
+msgstr ""
+
+#: includes/class-qi-gateway-woocommerce.php:123
+msgid "Dear Mr/Mrs."
+msgstr "عزيزي السيد\\السيدة."
+
+#: includes/class-qi-gateway-woocommerce.php:124
+msgid ""
+"An invoice has been created for your order, please pay the bill through Qi "
+"platform"
+msgstr "تم انشاء فاتورة خاصة بطلبك, يرجى تسديد الفاتورة من خلال منصة كي كارد"
+
+#: includes/class-qi-gateway-woocommerce.php:125
+msgid "Pay Bill"
+msgstr "دفع الفاتورة"
+
+#: includes/class-qi-gateway-woocommerce.php:145
+msgid "Error: Invalid phone number"
+msgstr "خطا: رقم الهاتف غير صحيح"
+
+#: includes/class-qi-gateway-woocommerce.php:166
+msgid "Awaiting bill payment"
+msgstr "في انتظار دفع الفاتورة"
+
+#: includes/class-qi-gateway-woocommerce.php:186
+msgid "Something Wrong, Please try again later."
+msgstr "حدث خطأ, حاول مجدداً في وقت لاحق."
+
+#: includes/libraries/plugin-update-checker-4.9/Puc/v4p9/Plugin/Ui.php:54
+msgid "View details"
+msgstr ""
+
+#: includes/libraries/plugin-update-checker-4.9/Puc/v4p9/Plugin/Ui.php:77
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: includes/libraries/plugin-update-checker-4.9/Puc/v4p9/Plugin/Ui.php:128
+msgid "Check for updates"
+msgstr ""
+
+#: includes/libraries/plugin-update-checker-4.9/Puc/v4p9/Plugin/Ui.php:223
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: includes/libraries/plugin-update-checker-4.9/Puc/v4p9/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr ""
+
+#: qi-gateway.php:119
+msgid "Sorry, you need to install Woocommerce plugin to use Qi Gateway"
+msgstr "عذراً، يجب عليك تنصيب اضافة  Woocommerce من اجل استخدام بوابة الدفع"
