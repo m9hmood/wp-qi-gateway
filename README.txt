@@ -5,10 +5,21 @@ with easy installation and advanced features like logs & statstics.
 
 == Installation ==
 
-1. Upload `qi-gateway.php` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Add your secret key from WooCommerce -> Settings -> Payments -> Qi Gateway
-4. Thats it :)
+Using Wordpress Admin Panel:
+1. Download the project as .zip file from Code -> Download Zip
+2. Go to Admin Panel -> Plugins -> Add New and select Upload Plugin
+3. Select `qi-gateway.zip` and then click on upload.
+4. Activate the plugin
+5. Add your secret key from WooCommerce -> Settings -> Payments -> Qi Gateway
+6. Thats it :)
+
+Using File Manager:
+1. Download the project as .zip file from Code -> Download Zip
+2. Upload `qi-gateway.zip` to the `/wp-content/plugins/` directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
+4. Add your secret key from WooCommerce -> Settings -> Payments -> Qi Gateway
+5. Thats it :)
+
 
 == Changelog ==
 
