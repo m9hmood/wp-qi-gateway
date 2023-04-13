@@ -1,22 +1,12 @@
 <?php
-
-/**
- * Qi-Gateway statistics class
- *
- * @link       https://mahmoodshakir.com/
- * @since      1.0.0
- *
- * @package    Qi_Gateway
- * @subpackage Qi_Gateway/includes
- */
-
 /**
  *
  * define the hooks and settings for admin page
  *
  * @package    Qi_Gateway
- * @subpackage Qi_Gateway/includes
+ * @subpackage Qi_Gateway/admin
  * @author     Mahmood Abbas <contact@mahmoodshakir.com>
+ * @since      1.0.0
  */
 class QI_GATEWAY_ADMIN_STATISTICS
 {
@@ -47,8 +37,4 @@ class QI_GATEWAY_ADMIN_STATISTICS
         $sql = "SELECT COUNT(*) FROM $this->db_name WHERE status='%s' AND operation='%s'";
         return number_format($this->db->get_var($this->db->prepare($sql, array(QiOperationStatus::Success, QiCustomerOperations::Create) )) ?? 0);
     }
-
-//    public function get_bills_by_status_count($status) {
-//        return $this->db->get_var("SELECT COUNT(*) FROM $this->db_name WHERE status = '$status'");
-//    }
 }

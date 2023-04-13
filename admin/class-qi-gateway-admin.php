@@ -1,21 +1,13 @@
 <?php
 /**
  * Qi-Gateway admin page class
- *
- * @link       https://mahmoodshakir.com/
- * @since      1.0.0
- *
- * @package    Qi_Gateway
- * @subpackage Qi_Gateway/includes
- */
-
-/**
- *
+ * 
  * define the hooks and settings for admin page
  *
  * @package    Qi_Gateway
- * @subpackage Qi_Gateway/includes
+ * @subpackage Qi_Gateway/admin
  * @author     Mahmood Abbas <contact@mahmoodshakir.com>
+ * @since      1.0.0
  */
 class Qi_Gateway_Admin
 {

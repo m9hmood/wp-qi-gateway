@@ -4,10 +4,10 @@
  * Fired during plugin activation.
  * Display A Disclaimer on activate the plugin
  *
- * @since      1.3.1
  * @package    Qi_Gateway
  * @subpackage Qi_Gateway/includes
  * @author     Mahmood Abbas <contact@mahmoodshakir.com>
+ * @since      1.3.1
  */
 class Qi_Gateway_Disclaimer
 {

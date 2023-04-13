@@ -101,8 +101,7 @@ class Qi_Gateway
          */
         require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-qi-gateway-helper.php';
         /**
-         * The class responsible for defining woocommerce gateway
-         * of the plugin.
+         * The class responsible for defining new woocommerce gateway
          */
         require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-qi-gateway-woocommerce.php';
         /**
@@ -171,7 +170,7 @@ class Qi_Gateway
     }
 
     /**
-     * Register admin page for tasdid logs
+     * Register admin page for Qi Gateway Logs
      * @access private
      * @since 1.3.0
      */

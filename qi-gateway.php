@@ -86,7 +86,7 @@ if (is_admin()) {
     if (!class_exists('Puc_v4_Factory')) {
         require_once plugin_dir_path(__FILE__) . 'includes/libraries/plugin-update-checker-4.9/plugin-update-checker.php';
         $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-            'https://qi.mahmoodshakir.com/qi.json',
+            'https://plugins.mahmoodshakir.com/qi.json',
             __FILE__, //Full path to the main plugin file or functions.php.
             'qi-gateway'
         );

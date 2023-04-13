@@ -6,6 +6,7 @@
  * @package    Qi_Gateway
  * @subpackage Qi_Gateway/includes
  * @author     Mahmood Abbas <contact@mahmoodshakir.com>
+ * @since      1.0.0
  */
 
 defined('ABSPATH') || exit;

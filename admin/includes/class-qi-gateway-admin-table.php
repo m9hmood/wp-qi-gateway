@@ -2,7 +2,16 @@
 if (!class_exists('WP_List_Table')) {
     require_once(ABSPATH . 'wp-admin/includes/class-wp-list-table.php');
 }
-
+/**
+ * Define the admin page table class for logs
+ * 
+ * @package Qi_Gateway
+ * @subpackage Qi_Gateway/admin
+ * @author Mahmood Abbas <contact@mahmoodshakir.com>
+ * @since 1.0.0
+ * @see WP_List_Table
+ * @see https://developer.wordpress.org/reference/classes/wp_list_table/
+ */
 class QI_GATEWAY_ADMIN_TABLE extends WP_List_Table
 {
 

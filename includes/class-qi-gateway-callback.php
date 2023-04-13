@@ -5,6 +5,7 @@
  * @package    Qi_Gateway
  * @subpackage Qi_Gateway/includes
  * @author     Mahmood Abbas <contact@mahmoodshakir.com>
+ * @since      1.0.0
  */
 class Qi_Gateway_Callback
 {

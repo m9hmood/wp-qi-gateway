@@ -1,24 +1,13 @@
 <?php
-
-/**
- * Fired during plugin deactivation
- *
- * @link       https://mahmoodshakir.com/
- * @since      1.0.0
- *
- * @package    Qi_Gateway
- * @subpackage Qi_Gateway/includes
- */
-
 /**
  * Fired during plugin deactivation.
  *
  * This class defines all code necessary to run during the plugin's deactivation.
  *
- * @since      1.0.0
  * @package    Qi_Gateway
  * @subpackage Qi_Gateway/includes
  * @author     Mahmood Abbas <contact@mahmoodshakir.com>
+ * @since      1.0.0
  */
 class Qi_Gateway_Deactivator
 {
