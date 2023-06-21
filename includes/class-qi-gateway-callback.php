@@ -19,14 +19,11 @@ class Qi_Gateway_Callback
         if (isset($_GET['authToken']) && !empty($_GET['authToken'])) {
             $this->handleAuthToken();
         }
-
-        if (isset($_GET['orderToken']) && !empty($_GET['orderToken'])) {
-            $this->handleOrderToken();
-        }
     }
 
     /**
-     * Handle auth token
+     * Verify payment by order token and set order status
+     * based on payment response
      *
      * @throws \Exception
      */
@@ -60,8 +57,8 @@ class Qi_Gateway_Callback
                 $orders[0]->update_status('processing');
                 Qi_Gateway_Helper::Logger(
                     $order_id,
-                    QiCustomerOperations::Payment,
-                    QiOperationStatus::Success,
+                    QiCustomerOperations::PAYMENT,
+                    QiOperationStatus::SUCCESS,
                     $response_data['data']['cardHolder'],
                     $response_data['data']['maskedCardNumber'],
                     $response_data['data']['currency'],
@@ -72,37 +69,20 @@ class Qi_Gateway_Callback
                 echo '</div>';
             } else {
                 $orders[0]->update_status('failed');
-                Qi_Gateway_Helper::Logger($order_id, QiCustomerOperations::Payment, QiOperationStatus::Fail);
+                Qi_Gateway_Helper::Logger($order_id, QiCustomerOperations::PAYMENT, QiOperationStatus::FAIL);
                 echo '<div style="width: 90%; margin: 5px auto; background: gainsboro; padding: 10px; text-align: center; border-radius: 5px;">';
                 echo __('Payment Failed', 'qi-gateway');
                 echo '</div>';
             }
         } catch (\Exception $e) {
             // log error and display message
-            Qi_Gateway_Helper::Logger($order_id, QiCustomerOperations::Payment, QiOperationStatus::Error, $e->getMessage());
+            Qi_Gateway_Helper::Logger($order_id, QiCustomerOperations::PAYMENT, QiOperationStatus::Error, $e->getMessage());
             echo '<div style="width: 90%; margin: 5px auto; background: gainsboro; padding: 10px; text-align: center; border-radius: 5px;">';
             echo __('An error occurred while processing the payment', 'qi-gateway');
             echo '</div>';
         }
     }
 
-    /**
-     * Handle order token
-     */
-    private function handleOrderToken()
-    {
-        $order = wc_get_order($_GET['orderToken']);
-        
-        if ($order) {
-            echo '<div style="width: 90%; margin: 5px auto; background: gainsboro; padding: 10px; text-align: center; border-radius: 5px;">';
-            echo $order->get_meta('_qi_order_token');
-            echo '</div>';
-        } else {
-            echo '<div style="width: 90%; margin: 5px auto; background: gainsboro; padding: 10px; text-align: center; border-radius: 5px;">';
-            echo __('Sorry, we couldn\'t find the order', 'qi-gateway');
-            echo '</div>';
-        }
-    }
 
     /**
      * Get payment gateway settings

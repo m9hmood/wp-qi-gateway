@@ -1,11 +1,11 @@
 <?php
 
 abstract class QiCustomerOperations {
-    const Create = 'create order';
-    const Payment = 'order payment';
+    const CREATE = 'create order';
+    const PAYMENT = 'order payment';
 }
 
 abstract class QiOperationStatus {
-    const Success = 'success';
-    const Fail = 'failed';
+    const SUCCESS = 'success';
+    const FAIL = 'failed';
 }

@@ -1,4 +1,13 @@
-=== QI: UnOffical Advance Plugin ===
+=== Qi Gateway: UnOfficial Advanced Gateway Integration ===
+Contributors: m9hmood
+Tags: WooCommerce, Payment Gateway, Iraqi Payment Gateway
+Requires at least: 4.7
+Tested up to: 5.4
+Stable tag: 4.3
+Requires PHP: 7.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Donate link: https://m9hmood.mysellix.io/product/6492560fe3d82
 
 This plugin allows you to add Qi Card as payment gateway for your woocommerce store
 with easy installation and advanced features like logs & statstics.

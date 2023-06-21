@@ -171,7 +171,7 @@ class Qi_Gateway_WC extends WC_Payment_Gateway
                 add_post_meta($order->get_id(), "_qi_order_3dSecureId", $response['data']['3DSecureId']);
                 add_post_meta($order->get_id(), "_qi_order_number", $order->get_order_number());
                 // add log
-                Qi_Gateway_Helper::Logger($order_id, QiCustomerOperations::Create, QiOperationStatus::Success, $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(), '', get_woocommerce_currency(), $order->get_total());
+                Qi_Gateway_Helper::Logger($order_id, QiCustomerOperations::CREATE, QiOperationStatus::SUCCESS, $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(), '', get_woocommerce_currency(), $order->get_total());
                 // empty cart
                 $woocommerce->cart->empty_cart();
                 return array(
@@ -181,11 +181,11 @@ class Qi_Gateway_WC extends WC_Payment_Gateway
             case 400:
                 echo 2;
                 wc_add_notice(__($response['message'], 'qi-gateway'), 'error');
-                Qi_Gateway_Helper::Logger($order_id, QiCustomerOperations::Create, QiOperationStatus::Fail, $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(), '', get_woocommerce_currency(), $order->get_total());
+                Qi_Gateway_Helper::Logger($order_id, QiCustomerOperations::CREATE, QiOperationStatus::FAIL, $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(), '', get_woocommerce_currency(), $order->get_total());
                 break;
             default:
                 wc_add_notice(__('Something Wrong, Please try again later.', 'qi-gateway') . $statusCode, 'error');
-                Qi_Gateway_Helper::Logger($order_id, QiCustomerOperations::Create, QiOperationStatus::Fail, $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(), '', get_woocommerce_currency(), $order->get_total());
+                Qi_Gateway_Helper::Logger($order_id, QiCustomerOperations::CREATE, QiOperationStatus::FAIL, $order->get_billing_first_name() . ' ' . $order->get_billing_last_name(), '', get_woocommerce_currency(), $order->get_total());
                 break;
         }
     }

@@ -18,6 +18,7 @@ class Qi_Gateway_Activator
 
     /**
      * Initialize the plugin table on plugin activation 
+     * this table will be used to store the logs
      *
      * @since    1.0.0
      */

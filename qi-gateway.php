@@ -13,7 +13,7 @@
  * @package           Qi_Gateway
  *
  * @wordpress-plugin
- * Plugin Name:       Qi Gateway: UnOfficial Advanced Gateway Plugin
+ * Plugin Name:       Qi Gateway: UnOfficial Advanced Gateway Integration
  * Plugin URI:        https://qi.mahmoodshaki.com/
  * Description:       Add Qi Card as payment method for Wordpress easily.
  * Version:           1.3.1
